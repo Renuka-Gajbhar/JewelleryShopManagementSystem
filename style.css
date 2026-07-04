@@ -1,0 +1,127 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Header / Navbar */
+header {
+  background-color: #fff;
+  color: #222;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: goldenrod;
+}
+
+/* Hero Section */
+.hero {
+  background: url('https://i.imgur.com/xG5p7hS.jpg') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.hero button {
+  background-color: goldenrod;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1em;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.hero button:hover {
+  background-color: #b8860b;
+}
+
+/* Product Section */
+.products {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+.products h2 {
+  color: #333;
+  margin-bottom: 40px;
+  font-size: 2em;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.product {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+}
+
+.product img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.product h3 {
+  margin-top: 15px;
+  color: #444;
+}
+
+.product p {
+  color: goldenrod;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #222;
+  color: #fff;
+  padding: 15px;
+  font-size: 0.9em;
+}
+
